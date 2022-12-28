@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                      http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+  version="4.0"
+  metadata-complete="true">
+
+  <display-name>Welcome to Tomcat</display-name>
+  <description>
+     Welcome to Tomcat
+  </description>
+  
+  <servlet>
+  	<servlet-name>restaurant01</servlet-name>
+  	<servlet-class>controllers.RestaurantSignInServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>restaurant01</servlet-name>
+  	<url-pattern>/restaurant_signin.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>restaurant02</servlet-name>
+  	<servlet-class>controllers.RestaurantSignUpServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>restaurant02</servlet-name>
+  	<url-pattern>/restaurant_signup.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>restaurant03</servlet-name>
+  	<servlet-class>controllers.RestaurantAccountActivationServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>restaurant03</servlet-name>
+  	<url-pattern>/restaurant_account_activation.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>restaurant04</servlet-name>
+  	<servlet-class>controllers.CheckRestaurantEmailServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>restaurant04</servlet-name>
+  	<url-pattern>/check_restaurant_email.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>restaurant05</servlet-name>
+  	<servlet-class>controllers.RestaurantProfileServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>restaurant05</servlet-name>
+  	<url-pattern>/restaurant_profile.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>restaurant06</servlet-name>
+  	<servlet-class>controllers.RestaurantLogoutServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>restaurant06</servlet-name>
+  	<url-pattern>/restaurant_logout.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>restaurant07</servlet-name>
+  	<servlet-class>controllers.RestaurantLogoUploadServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>restaurant07</servlet-name>
+  	<url-pattern>/restaurant_logo_upload.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>restaurant08</servlet-name>
+  	<servlet-class>controllers.ShowRestaurantLogoServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>restaurant08</servlet-name>
+  	<url-pattern>/show_restaurant_logo.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>restaurant09</servlet-name>
+  	<servlet-class>controllers.RestaurantDashboardServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>restaurant09</servlet-name>
+  	<url-pattern>/restaurant_dashboard.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>restaurant10</servlet-name>
+  	<servlet-class>controllers.SendOTPServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>restaurant10</servlet-name>
+  	<url-pattern>/send_otp.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>restaurant11</servlet-name>
+  	<servlet-class>controllers.RestaurantAddFoodServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>restaurant11</servlet-name>
+  	<url-pattern>/add_food.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>restaurant12</servlet-name>
+  	<servlet-class>controllers.RestaurantAllFoodServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>restaurant12</servlet-name>
+  	<url-pattern>/all_food.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>restaurant13</servlet-name>
+  	<servlet-class>controllers.FoodPicUploadServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>restaurant13</servlet-name>
+  	<url-pattern>/food_pic_upload.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+  	<servlet-name>restaurant14</servlet-name>
+  	<servlet-class>controllers.ShowFoodPicServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>restaurant14</servlet-name>
+  	<url-pattern>/show_food_pic.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>restaurant15</servlet-name>
+  	<servlet-class>controllers.RestaurantRecentOrdersServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>restaurant15</servlet-name>
+  	<url-pattern>/restaurant_recent_orders.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>restaurant16</servlet-name>
+  	<servlet-class>controllers.RestaurantAcceptOrderServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>restaurant16</servlet-name>
+  	<url-pattern>/accept_order.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>restaurant17</servlet-name>
+  	<servlet-class>controllers.RestaurantRejectOrderServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>restaurant17</servlet-name>
+  	<url-pattern>/reject_order.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>restaurant18</servlet-name>
+  	<servlet-class>controllers.RestaurantAllOrdersServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>restaurant18</servlet-name>
+  	<url-pattern>/restaurant_all_orders.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>restaurant19</servlet-name>
+  	<servlet-class>controllers.RestaurantProcessOrderServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>restaurant19</servlet-name>
+  	<url-pattern>/process_order.do</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+  	<servlet-name>restaurant20</servlet-name>
+  	<servlet-class>controllers.RestaurantDeliverOrderServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>restaurant20</servlet-name>
+  	<url-pattern>/deliver_order.do</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+  	<servlet-name>restaurant21</servlet-name>
+  	<servlet-class>controllers.RestaurantProcessedOrderServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>restaurant21</servlet-name>
+  	<url-pattern>/processed_order.do</url-pattern>
+  </servlet-mapping> 
+  
+
+
+  
+  <servlet>
+  	<servlet-name>common11</servlet-name>
+  	<servlet-class>controllers.CheckOTPServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>common11</servlet-name>
+  	<url-pattern>/check_otp.do</url-pattern>
+  </servlet-mapping>
+  
+
+  
+  
+  <servlet>
+  	<servlet-name>user01</servlet-name>
+  	<servlet-class>controllers.UserSignInServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>user01</servlet-name>
+  	<url-pattern>/user_signin.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+  	<servlet-name>user02</servlet-name>
+  	<servlet-class>controllers.UserSignUpServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>user02</servlet-name>
+  	<url-pattern>/user_signup.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+  	<servlet-name>user03</servlet-name>
+  	<servlet-class>controllers.UserAccountActivationServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>user03</servlet-name>
+  	<url-pattern>/user_account_activation.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+  	<servlet-name>user04</servlet-name>
+  	<servlet-class>controllers.CheckUserEmailServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>user04</servlet-name>
+  	<url-pattern>/check_user_email.do</url-pattern>
+  </servlet-mapping>
+  
+
+
+  <servlet>
+  	<servlet-name>user05</servlet-name>
+  	<servlet-class>controllers.UserProfileServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>user05</servlet-name>
+  	<url-pattern>/user_profile.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+  	<servlet-name>user06</servlet-name>
+  	<servlet-class>controllers.UserLogoutServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>user06</servlet-name>
+  	<url-pattern>/user_logout.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+  	<servlet-name>user07</servlet-name>
+  	<servlet-class>controllers.UserLogoUploadServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>user07</servlet-name>
+  	<url-pattern>/user_pic_upload.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+  	<servlet-name>user08</servlet-name>
+  	<servlet-class>controllers.ShowUserLogoServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>user08</servlet-name>
+  	<url-pattern>/show_user_logo.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+  	<servlet-name>user09</servlet-name>
+  	<servlet-class>controllers.UserDashboardServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>user09</servlet-name>
+  	<url-pattern>/user_dashboard.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>user10</servlet-name>
+  	<servlet-class>controllers.SearchServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>user10</servlet-name>
+  	<url-pattern>/search.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>user11</servlet-name>
+  	<servlet-class>controllers.AddToCartServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>user11</servlet-name>
+  	<url-pattern>/add_to_cart.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>user12</servlet-name>
+  	<servlet-class>controllers.OrderFoodServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>user12</servlet-name>
+  	<url-pattern>/order_food.do</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+  	<servlet-name>user13</servlet-name>
+  	<servlet-class>controllers.UserOrdersServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>user13</servlet-name>
+  	<url-pattern>/user_orders.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  <servlet>
+  	<servlet-name>deliverer01</servlet-name>
+  	<servlet-class>controllers.DelivererSignInServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>deliverer01</servlet-name>
+  	<url-pattern>/deliverer_signin.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+  	<servlet-name>deliverer02</servlet-name>
+  	<servlet-class>controllers.DelivererSignUpServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>deliverer02</servlet-name>
+  	<url-pattern>/deliverer_signup.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>deliverer03</servlet-name>
+  	<servlet-class>controllers.DelivererAccountActivationServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>deliverer03</servlet-name>
+  	<url-pattern>/deliverer_account_activation.do</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+  	<servlet-name>deliverer04</servlet-name>
+  	<servlet-class>controllers.CheckDelivererEmailServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>deliverer04</servlet-name>
+  	<url-pattern>/check_deliverer_email.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>deliverer05</servlet-name>
+  	<servlet-class>controllers.DelivererProfileServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>deliverer05</servlet-name>
+  	<url-pattern>/deliverer_profile.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>deliverer06</servlet-name>
+  	<servlet-class>controllers.DelivererLogoutServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>deliverer06</servlet-name>
+  	<url-pattern>/deliverer_logout.do</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+  	<servlet-name>deliverer07</servlet-name>
+  	<servlet-class>controllers.DelivererDashboardServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>deliverer07</servlet-name>
+  	<url-pattern>/deliverer_dashboard.do</url-pattern>
+  </servlet-mapping> 
+  
+  
+  <servlet>
+  	<servlet-name>deliverer08</servlet-name>
+  	<servlet-class>controllers.DelivererAllProcessedOrderServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>deliverer08</servlet-name>
+  	<url-pattern>/deliverer_all_processed_orders.do</url-pattern>
+  </servlet-mapping> 
+  
+  
+  <servlet>
+  	<servlet-name>deliverer09</servlet-name>
+  	<servlet-class>controllers.DelivererAcceptOrderDeliveryServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>deliverer09</servlet-name>
+  	<url-pattern>/accept_order_delivery.do</url-pattern>
+  </servlet-mapping>  
+  
+  
+  <servlet>
+  	<servlet-name>deliverer10</servlet-name>
+  	<servlet-class>controllers.DelivererAllUndeliveredOrdersServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>deliverer10</servlet-name>
+  	<url-pattern>/deliverer_all_undelivered_orders.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+  	<servlet-name>deliverer11</servlet-name>
+  	<servlet-class>controllers.DelivererOrderDeliveredServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>deliverer11</servlet-name>
+  	<url-pattern>/order_delivered.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>deliverer12</servlet-name>
+  	<servlet-class>controllers.DelivererAllDeliveredOrdersServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>deliverer12</servlet-name>
+  	<url-pattern>/deliverer_all_delivered_orders.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+</web-app>
