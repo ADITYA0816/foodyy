@@ -1,0 +1,102 @@
+.banner{
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    height: 340px;
+    padding: 10px;
+}
+
+.header{
+    background-color: rgba(255, 255, 255, 0.55);
+    color: black;
+    font-family: 'Itim', cursive;
+}
+
+.slogan{
+    background-color: rgba(255, 255, 255, 0.24);
+}
+
+.bodytextcol{
+    color: hsl(29, 32%, 51%);
+}
+
+.text-small{
+    font-size: 13px;
+}
+
+.mt-25{
+    margin-top: 10px;
+}
+
+.foodcardheight{
+    height: 150px;
+}
+
+.pintime{
+    background: #f30;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 12px;
+    padding: 0 10px;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.pinstep{
+    background-color: rgba(0, 0, 0, 0.43);
+    color: #fff;
+    font-size: 17px;
+    position: absolute;
+    top: 25px;
+}
+
+.pinline{
+    background-color: rgba(0, 0, 0, 0.43);
+    color: #fff;
+    font-size: 17px;
+    position: absolute;
+    top: 50px;
+    /* left: 14%; */
+}
+
+.card-title{
+    color: hsl(29, 36%, 46%);
+}
+
+.form-control{
+    margin-top: 5px;
+}
+
+.sublink{
+    color: rgb(255, 115, 0);
+}
+.sublink:hover{
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+}
+
+#page-container {
+    position: relative;
+    height: 75vh;
+  }
+
+.page-footer{
+    margin-top: 0px;
+    padding-top: 0px;
+    background-color: rgba(2, 22, 39, 0.459);
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+#homeLink h3{
+	color: black;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+

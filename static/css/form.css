@@ -1,0 +1,30 @@
+.success{
+	border-color: green;
+}
+
+.fail{
+	border-color: red;
+}
+
+input{
+	outline: none !important;	
+}
+
+.show{
+	display:block; 
+}
+
+.hide{
+	display: none;
+}
+
+.error-box{
+	border: 1px solid red;	
+	padding-top: 1rem;
+	width: 70%;
+	margin-left: 1.3rem;
+	border-radius: 5px;
+	color: red;
+	margin-bottom: 1.2rem;
+	list-style: none;
+}

@@ -1,0 +1,68 @@
+.menu-list a:hover{
+    color: blue;
+}
+
+.menu-list button:hover{
+    color: blue;
+}
+
+
+.menu-list{
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.tablebody tr th{
+    font-weight: normal;
+}
+
+tbody tr th{
+    font-weight: normal;
+}
+
+.card-body{
+    padding: 0px;
+    padding-bottom: 0px;
+}
+
+.menu-list li{
+    list-style: none;
+}
+
+.collapsedlist a{
+    text-decoration: none;
+    color: grey;
+}
+
+.collapsedlist :hover{
+    color: blue;
+}
+
+#logoutbutton:hover{
+    color: red;
+}
+
+.btn-xsm{
+    font-size: 13px;
+}
+
+.list-group-item-action:hover {
+    width: 100%;
+    background-color: #fff;
+    text-align: inherit;
+}
+
+.collapsedlist{
+    margin-left: 6px;
+}
+
+.menu-button{
+    border: none;
+}
+
+.noLink{
+    color: white;
+}
+
+.noLink:hover{
+    color: rgb(243, 243, 243);
+}
